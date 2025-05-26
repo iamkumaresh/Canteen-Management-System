@@ -1,0 +1,132 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f8fafc;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+    display: flex;
+    background: #e9e9eba2;  
+    padding: 20px 30px;
+    color: rgba(23, 15, 137, 0.815);
+    justify-content: space-between;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.background {
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 115%;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(assets/Login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(2px); 
+}
+
+main {
+  flex-grow: 1; 
+  width: 45%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px 40px;
+}
+
+.support-form-section {
+  background: rgba(255, 255, 255, 0.654);
+  padding: 30px 35px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(39, 174, 96, 0.2);
+}
+
+.support-form-section h2 {
+  margin-bottom: 25px;
+  color: #27ae60;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  border: 1.8px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  border-color: #27ae60;
+  outline: none;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin-top: -12px;
+  margin-bottom: 12px;
+  min-height: 18px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 14px 0;
+  background: #27ae60;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  user-select: none;
+}
+
+button[type="submit"]:hover {
+  background: #219150;
+}
+
+.form-success {
+  margin-top: 20px;
+  color: #27ae60;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#cont {
+    color: #1f894b;
+    box-shadow: 1px 1px solid gray;
+}

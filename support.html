@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Customer Support - College Canteen Management System</title>
+  <link rel="stylesheet" href="support.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="assets/JIS_University.png" alt="" height="75rem" width="75rem">
+    </div>
+    <h1><i>Customer Support</i></h1>
+    <div class="logo">
+      <img src="assets/JIS_University.png" alt="" height="75rem" width="75rem">
+    </div>
+  </header>
+  <div class="background"></div>
+  <main>
+    <section class="support-form-section" aria-label="Customer support contact form">
+      <h2 id="cont"><b>Contact Us</b></h2>
+      <form id="support-form" novalidate>
+        <label for="name">Name<span aria-label="required">*</span></label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+        <div class="error-message" id="name-error" aria-live="polite"></div>
+
+        <label for="email">Email<span aria-label="required">*</span></label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        <div class="error-message" id="email-error" aria-live="polite"></div>
+
+        <label for="subject">Subject<span aria-label="required">*</span></label>
+        <input type="text" id="subject" name="subject" placeholder="Subject of your message" required />
+        <div class="error-message" id="subject-error" aria-live="polite"></div>
+
+        <label for="message">Message<span aria-label="required">*</span></label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+        <div class="error-message" id="message-error" aria-live="polite"></div>
+
+        <button type="submit">Send Message</button>
+        <div class="form-success" id="form-success" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <script src="support.js"></script>
+</body>
+</html>

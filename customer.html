@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Customer Home - College Canteen Management System</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="customer.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="assets/JIS_University.png" alt="" height="75rem" width="75rem">
+    </div>
+      <h1><i>Canteen Management System</i></h1>
+    </div>
+    <div class="logout">
+        <button id="logout-btn" ><i class="fa-solid fa-right-from-bracket"></i></button>
+    </div>
+  </header>
+  <div class="background"></div>
+  <main>
+    <section class="menu" aria-label="Food Menu">
+      <h2>Menu</h2>
+      <div id="menu-items" class="menu-items">
+        <div class="menu-item" data-id="1" data-name="Veg Meal" data-description="Steamed rice + Daal + Fresh sabji" data-price="30">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Veg Meal</div>
+            <div class="menu-item-desc">Steamed rice + Daal + Fresh sabji</div>
+          </div>
+          <div class="menu-item-price">₹30.00</div>
+          <button aria-label="Add Veg Meal to cart">Add</button>
+        </div>
+        <div class="menu-item" data-id="2" data-name="Egg Meal" data-description="Egg + Veg meal " data-price="40">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Egg Meal</div>
+            <div class="menu-item-desc">Egg + Veg meal </div>
+          </div>
+          <div class="menu-item-price">₹40.00</div>
+          <button aria-label="Add Egg Meal to cart">Add</button>
+        </div>
+        <div class="menu-item" data-id="3" data-name="Fish Meal" data-description="Fresh Fish curry + Veg meal" data-price="55">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Fish Meal</div>
+            <div class="menu-item-desc">Fresh Fish curry + Veg meal</div>
+          </div>
+          <div class="menu-item-price">₹55.00</div>
+          <button aria-label="Add Fish Meal to cart">Add</button>
+        </div>
+        <div class="menu-item" data-id="4" data-name="Chicken Meal" data-description="Fresh Chicken curry + veg meal" data-price="75">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Chicken Meal</div>
+            <div class="menu-item-desc">Fresh Chicken curry + veg meal</div>
+          </div>
+          <div class="menu-item-price">₹75.00</div>
+          <button aria-label="Chicken Meal">Add</button>
+        </div>
+        <div class="menu-item" data-id="5" data-name="Rice" data-description="Freshly Steamed miniket rice" data-price="10">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Rice</div>
+            <div class="menu-item-desc">Freshly Steamed miniket rice</div>
+          </div>
+          <div class="menu-item-price">₹10.00</div>
+          <button aria-label="Add Rice to cart">Add</button>
+        </div>
+        <div class="menu-item" data-id="6" data-name="Sabji" data-description="A delightfull mix of fresh vegetable" data-price="10">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Sabji</div>
+            <div class="menu-item-desc">A delightfull mix of fresh vegetable</div>
+          </div>
+          <div class="menu-item-price">₹10.00</div>
+          <button aria-label="Add Sabji to cart">Add</button>
+        </div>
+        <div class="menu-item" data-id="7" data-name="Daal" data-description="A heartly lentil dish" data-price="10">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Daal</div>
+            <div class="menu-item-desc">A heartly lentil dish</div>
+          </div>
+          <div class="menu-item-price">₹10.00</div>
+          <button aria-label="Add Daal to cart">Add</button>
+        </div>
+        <div class="menu-item" data-id="8" data-name="Egg Curry" data-description="Boiled Egg with mashala gravy" data-price="12">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Egg Curry</div>
+            <div class="menu-item-desc">Boiled Egg with mashala gravy</div>
+          </div>
+          <div class="menu-item-price">₹12.00</div>
+          <button aria-label="Add Chole Bhature to cart">Add</button>
+        </div>
+        <div class="menu-item" data-id="9" data-name="Fish Curry" data-description="Fresh Fish simmered in a spiced gravy" data-price="30">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Fish Curry</div>
+            <div class="menu-item-desc">Fresh Fish simmered in a spiced gravy</div>
+          </div>
+          <div class="menu-item-price">₹30.00</div>
+          <button aria-label="Add Fish Curry to cart">Add</button>
+        </div>
+        <div class="menu-item" data-id="10" data-name="Chicken Curry" data-description="Tender chicken pieces stimmered in a flavourful spiced gravy" data-price="45">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Chicken Curry</div>
+            <div class="menu-item-desc">Tender chicken pieces stimmered in a flavourful spiced gravy</div>
+          </div>
+          <div class="menu-item-price">₹45.00</div>
+          <button aria-label="Add Chicken Curry to cart">Add</button>
+        </div>
+      </div>
+    </section>
+    <section class="cart" aria-label="Shopping Cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items" class="cart-items">
+            <p>Your cart is empty.</p>
+        </div>
+        <div id="cart-total" class="cart-total">Total: ₹0.00</div>
+        <div class="payment-method">
+          <h3>Payment Method</h3>
+          <label><input type="radio" name="payment" value="Cash" /> Cash</label>
+          <label><input type="radio" name="payment" value="Credit/Debit Card" /> Credit/Debit Card</label>
+          <label><input type="radio" name="payment" value="UPI" /> UPI</label>
+
+          <div id="card-number-container" class="payment-input-container" style="display: none;">
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" maxlength="19" placeholder="Enter card number" />
+            <div id="card-number-error" class="error-message"></div>
+          </div>
+
+          <div id="upi-id-container" class="payment-input-container" style="display: none;">
+            <label for="upi-id">UPI ID</label>
+            <input type="text" id="upi-id" placeholder="example@upi" />
+            <div id="upi-id-error" class="error-message"></div>
+          </div>
+
+          <div id="payment-error" class="error-message" aria-live="polite"></div>
+        </div>       
+      <button id="place-order-btn" disabled>Place Order</button>
+        
+    </section>
+    <div>
+      <button id="support"><b><i>Customer Support </i></b><i class="fa-solid fa-headset"></i></button>
+    </div>
+      
+  </main>
+  <footer>
+    
+  </footer>
+
+  <script src="customer.js"></script>
+
+</body>
+</html>

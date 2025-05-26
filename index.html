@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - College Canteen Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="background"></div>
+  <div class="login-container">
+    <h2>College Canteen Login</h2>
+    <form id="login-form" novalidate>
+      <label for="role">Select Role</label>
+      <select id="role" name="role" required aria-describedby="role-error">
+        <option value="" disabled selected>Select Role</option>
+        <option value="Admin">Admin</option>
+        <option value="Customer">Customer</option>
+      </select>
+      <div id="role-error" class="error-message" aria-live="polite"></div>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" autocomplete="username" required placeholder="you@example.com" />
+      <div id="email-error" class="error-message" aria-live="polite"></div>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" autocomplete="current-password" required placeholder="Your password" />
+      <div id="password-error" class="error-message" aria-live="polite"></div>
+
+      <div class="toggle-password">
+        <label>
+          <input type="checkbox" id="toggle-password" />
+          Show Password
+        </label>
+      </div>
+
+      <button id="login" type="submit">Log In</button>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
